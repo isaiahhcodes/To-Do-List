@@ -45,7 +45,55 @@ button{
     cursor: pointer;
 
 }
-/* Animations */
+/* Button Animations */
 button:hover{
     background: #0056b3;
+}
+
+#noTasksMessage {
+    text-align: center;
+    color: #aaa;
+    font-weight: bold;
+    font-style: italic;
+    margin: 10px 0;
+    transition: 0.3s ease-in-out;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #444;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+    opacity: 0.7;
+}
+
+li button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+li button:hover {
+    background: darkred;
 }
